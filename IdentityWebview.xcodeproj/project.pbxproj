@@ -13,6 +13,13 @@
 		BE6D6AA21E83BCF10017D3AF /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = BE6D6AA01E83BCF10017D3AF /* Main.storyboard */; };
 		BE6D6AA41E83BCF10017D3AF /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = BE6D6AA31E83BCF10017D3AF /* Assets.xcassets */; };
 		BE6D6AA71E83BCF10017D3AF /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = BE6D6AA51E83BCF10017D3AF /* LaunchScreen.storyboard */; };
+		BE6D6AB91E83BD030017D3AF /* TMLVideoIdentityVC.m in Sources */ = {isa = PBXBuildFile; fileRef = BE6D6AB41E83BD030017D3AF /* TMLVideoIdentityVC.m */; };
+		BE6D6ABA1E83BD030017D3AF /* TMLWebView.m in Sources */ = {isa = PBXBuildFile; fileRef = BE6D6AB71E83BD030017D3AF /* TMLWebView.m */; };
+		BE6D6ABD1E83BDE20017D3AF /* TMLBaseNaviController.m in Sources */ = {isa = PBXBuildFile; fileRef = BE6D6ABC1E83BDE20017D3AF /* TMLBaseNaviController.m */; };
+		BE6D6AC11E83BE4B0017D3AF /* TMLMainVC.m in Sources */ = {isa = PBXBuildFile; fileRef = BE6D6AC01E83BE4B0017D3AF /* TMLMainVC.m */; };
+		BE6D6AC91E83C2D60017D3AF /* MBProgressHUD+TML.m in Sources */ = {isa = PBXBuildFile; fileRef = BE6D6AC51E83C2D60017D3AF /* MBProgressHUD+TML.m */; };
+		BE6D6ACA1E83C2D60017D3AF /* MBProgressHUD.bundle in Resources */ = {isa = PBXBuildFile; fileRef = BE6D6AC61E83C2D60017D3AF /* MBProgressHUD.bundle */; };
+		BE6D6ACB1E83C2D60017D3AF /* MBProgressHUD.m in Sources */ = {isa = PBXBuildFile; fileRef = BE6D6AC81E83C2D60017D3AF /* MBProgressHUD.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -26,6 +33,20 @@
 		BE6D6AA31E83BCF10017D3AF /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		BE6D6AA61E83BCF10017D3AF /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		BE6D6AA81E83BCF10017D3AF /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		BE6D6AB31E83BD030017D3AF /* TMLVideoIdentityVC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TMLVideoIdentityVC.h; sourceTree = "<group>"; };
+		BE6D6AB41E83BD030017D3AF /* TMLVideoIdentityVC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TMLVideoIdentityVC.m; sourceTree = "<group>"; };
+		BE6D6AB61E83BD030017D3AF /* TMLWebView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TMLWebView.h; sourceTree = "<group>"; };
+		BE6D6AB71E83BD030017D3AF /* TMLWebView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TMLWebView.m; sourceTree = "<group>"; };
+		BE6D6ABB1E83BDE20017D3AF /* TMLBaseNaviController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TMLBaseNaviController.h; sourceTree = "<group>"; };
+		BE6D6ABC1E83BDE20017D3AF /* TMLBaseNaviController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TMLBaseNaviController.m; sourceTree = "<group>"; };
+		BE6D6ABE1E83BDFA0017D3AF /* identityContants.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = identityContants.h; sourceTree = "<group>"; };
+		BE6D6ABF1E83BE4B0017D3AF /* TMLMainVC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TMLMainVC.h; sourceTree = "<group>"; };
+		BE6D6AC01E83BE4B0017D3AF /* TMLMainVC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TMLMainVC.m; sourceTree = "<group>"; };
+		BE6D6AC41E83C2D60017D3AF /* MBProgressHUD+TML.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "MBProgressHUD+TML.h"; sourceTree = "<group>"; };
+		BE6D6AC51E83C2D60017D3AF /* MBProgressHUD+TML.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "MBProgressHUD+TML.m"; sourceTree = "<group>"; };
+		BE6D6AC61E83C2D60017D3AF /* MBProgressHUD.bundle */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.plug-in"; path = MBProgressHUD.bundle; sourceTree = "<group>"; };
+		BE6D6AC71E83C2D60017D3AF /* MBProgressHUD.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MBProgressHUD.h; sourceTree = "<group>"; };
+		BE6D6AC81E83C2D60017D3AF /* MBProgressHUD.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MBProgressHUD.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -58,8 +79,13 @@
 		BE6D6A961E83BCF10017D3AF /* IdentityWebview */ = {
 			isa = PBXGroup;
 			children = (
+				BE6D6AAE1E83BD030017D3AF /* identitySDK */,
 				BE6D6A9A1E83BCF10017D3AF /* AppDelegate.h */,
 				BE6D6A9B1E83BCF10017D3AF /* AppDelegate.m */,
+				BE6D6ABB1E83BDE20017D3AF /* TMLBaseNaviController.h */,
+				BE6D6ABC1E83BDE20017D3AF /* TMLBaseNaviController.m */,
+				BE6D6ABF1E83BE4B0017D3AF /* TMLMainVC.h */,
+				BE6D6AC01E83BE4B0017D3AF /* TMLMainVC.m */,
 				BE6D6A9D1E83BCF10017D3AF /* ViewController.h */,
 				BE6D6A9E1E83BCF10017D3AF /* ViewController.m */,
 				BE6D6AA01E83BCF10017D3AF /* Main.storyboard */,
@@ -77,6 +103,63 @@
 				BE6D6A981E83BCF10017D3AF /* main.m */,
 			);
 			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		BE6D6AAE1E83BD030017D3AF /* identitySDK */ = {
+			isa = PBXGroup;
+			children = (
+				BE6D6AC21E83C1860017D3AF /* lib */,
+				BE6D6AAF1E83BD030017D3AF /* classes  */,
+				BE6D6AB01E83BD030017D3AF /* Controller */,
+				BE6D6AB51E83BD030017D3AF /* view */,
+			);
+			path = identitySDK;
+			sourceTree = "<group>";
+		};
+		BE6D6AAF1E83BD030017D3AF /* classes  */ = {
+			isa = PBXGroup;
+			children = (
+				BE6D6ABE1E83BDFA0017D3AF /* identityContants.h */,
+			);
+			path = "classes ";
+			sourceTree = "<group>";
+		};
+		BE6D6AB01E83BD030017D3AF /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				BE6D6AB31E83BD030017D3AF /* TMLVideoIdentityVC.h */,
+				BE6D6AB41E83BD030017D3AF /* TMLVideoIdentityVC.m */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		BE6D6AB51E83BD030017D3AF /* view */ = {
+			isa = PBXGroup;
+			children = (
+				BE6D6AB61E83BD030017D3AF /* TMLWebView.h */,
+				BE6D6AB71E83BD030017D3AF /* TMLWebView.m */,
+			);
+			path = view;
+			sourceTree = "<group>";
+		};
+		BE6D6AC21E83C1860017D3AF /* lib */ = {
+			isa = PBXGroup;
+			children = (
+				BE6D6AC31E83C2D60017D3AF /* MBProgressHUD */,
+			);
+			path = lib;
+			sourceTree = "<group>";
+		};
+		BE6D6AC31E83C2D60017D3AF /* MBProgressHUD */ = {
+			isa = PBXGroup;
+			children = (
+				BE6D6AC41E83C2D60017D3AF /* MBProgressHUD+TML.h */,
+				BE6D6AC51E83C2D60017D3AF /* MBProgressHUD+TML.m */,
+				BE6D6AC61E83C2D60017D3AF /* MBProgressHUD.bundle */,
+				BE6D6AC71E83C2D60017D3AF /* MBProgressHUD.h */,
+				BE6D6AC81E83C2D60017D3AF /* MBProgressHUD.m */,
+			);
+			path = MBProgressHUD;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -110,7 +193,7 @@
 				TargetAttributes = {
 					BE6D6A931E83BCF10017D3AF = {
 						CreatedOnToolsVersion = 8.2.1;
-						DevelopmentTeam = 5TJPRVLYQF;
+						DevelopmentTeam = 3RJ7DZKE88;
 						ProvisioningStyle = Automatic;
 					};
 				};
@@ -139,6 +222,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				BE6D6AA71E83BCF10017D3AF /* LaunchScreen.storyboard in Resources */,
+				BE6D6ACA1E83C2D60017D3AF /* MBProgressHUD.bundle in Resources */,
 				BE6D6AA41E83BCF10017D3AF /* Assets.xcassets in Resources */,
 				BE6D6AA21E83BCF10017D3AF /* Main.storyboard in Resources */,
 			);
@@ -151,7 +235,13 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				BE6D6ABD1E83BDE20017D3AF /* TMLBaseNaviController.m in Sources */,
+				BE6D6AB91E83BD030017D3AF /* TMLVideoIdentityVC.m in Sources */,
+				BE6D6AC91E83C2D60017D3AF /* MBProgressHUD+TML.m in Sources */,
+				BE6D6AC11E83BE4B0017D3AF /* TMLMainVC.m in Sources */,
+				BE6D6ACB1E83C2D60017D3AF /* MBProgressHUD.m in Sources */,
 				BE6D6A9F1E83BCF10017D3AF /* ViewController.m in Sources */,
+				BE6D6ABA1E83BD030017D3AF /* TMLWebView.m in Sources */,
 				BE6D6A9C1E83BCF10017D3AF /* AppDelegate.m in Sources */,
 				BE6D6A991E83BCF10017D3AF /* main.m in Sources */,
 			);
@@ -271,7 +361,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				DEVELOPMENT_TEAM = 5TJPRVLYQF;
+				DEVELOPMENT_TEAM = 3RJ7DZKE88;
 				INFOPLIST_FILE = IdentityWebview/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.mtzn.IdentityWebview;
@@ -283,7 +373,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				DEVELOPMENT_TEAM = 5TJPRVLYQF;
+				DEVELOPMENT_TEAM = 3RJ7DZKE88;
 				INFOPLIST_FILE = IdentityWebview/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.mtzn.IdentityWebview;

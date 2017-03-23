@@ -7,6 +7,9 @@
 //
 
 #import "AppDelegate.h"
+#import "TMLBaseNaviController.h"
+#import "TMLMainVC.h"
+
 
 @interface AppDelegate ()
 
@@ -16,9 +19,22 @@
 
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions {
-    // Override point for customization after application launch.
+    
+    self.window = [[UIWindow alloc] initWithFrame:[UIScreen mainScreen].bounds];
+    
+    TMLMainVC * mainVC = [[TMLMainVC alloc] init];
+    
+    
+    TMLBaseNaviController * baseNavi = [[TMLBaseNaviController alloc] initWithRootViewController:mainVC];
+    
+    self.window.rootViewController = baseNavi;
+    
+    [self.window makeKeyAndVisible];
+    
+    
     return YES;
 }
+
 
 
 - (void)applicationWillResignActive:(UIApplication *)application {
