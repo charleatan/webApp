@@ -10,33 +10,46 @@
 
 @implementation TMLWebView
 
-#pragma Mark : - 初始化方法
--(instancetype)initWithFrame:(CGRect)frame{
-    self = [super initWithFrame:frame];
+-(BOOL)webView:(UIWebView *)webView shouldStartLoadWithRequest:(NSURLRequest *)request navigationType:(UIWebViewNavigationType)navigationType{
     
-    [self commonInit];
-    return self;
-}
-
--(instancetype)initWithCoder:(NSCoder *)coder{
-    self = [super initWithCoder:coder];
     
-    [self commonInit];
-    return  self;
-}
-
-
--(void)commonInit{
     
-    // ...
+    NSString *urlString = request.URL.absoluteString;
+    if ([urlString hasPrefix:@"xblj://"]) {
+        
+        NSString * host = [self sliceHost:urlString];
+        
+        NSDictionary * params = [self sliceParams:urlString];
+        
+        if ([host isEqualToString:@"openOrderDetail"]) {
+            [self openOrderDetail:params];
+        }
+        return NO;
+    }
+    return YES;
 }
 
-/*
-// Only override drawRect: if you perform custom drawing.
-// An empty implementation adversely affects performance during animation.
-- (void)drawRect:(CGRect)rect {
-    // Drawing code
+
+-(NSString *)sliceHost:(NSString *) urlString{
+    
+    NSString * sliceString ;
+    
+    return sliceString;
 }
-*/
+
+
+-(void)openOrderDetail:(NSDictionary *)params{
+    
+    
+}
+
+-(NSDictionary *)sliceParams:(NSString *)urlString{
+    
+    NSDictionary * sliceParams;
+    
+    
+    return sliceParams;
+}
+
 
 @end

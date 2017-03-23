@@ -49,6 +49,7 @@
     
     videoIdententityVC.urlStr = videoURLStr;
     
+//    [self.view addSubview:videoIdententityVC.view];
     [self.navigationController pushViewController:videoIdententityVC animated:YES];
     TMLLog(@"播放视频");
 }

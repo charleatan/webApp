@@ -69,9 +69,12 @@
   
 }
 
--(void)viewDidDisappear:(BOOL)animated {
+-(void)viewWillDisappear:(BOOL)animated:(BOOL)animated {
     [super viewDidDisappear:animated];
 
+    if (_session) {
+        [_session stopRunning];
+    }
 }
 - (void)didReceiveMemoryWarning {
     [super didReceiveMemoryWarning];
@@ -116,7 +119,6 @@
     NSURLRequest * request = [[NSURLRequest alloc] initWithURL:url];
     
     [webView loadRequest:request];
-    
     
     [self.view addSubview:webView];
     
@@ -189,8 +191,13 @@
         // 延迟三秒拍照
         dispatch_after(dispatch_time(DISPATCH_TIME_NOW, (int64_t)(3 * NSEC_PER_SEC)), dispatch_get_main_queue(), ^{
             
-            TMLLog(@"拍照");
-            [self takePhoto];
+            
+            if (_session.isRunning) {
+                TMLLog(@"拍照");
+                [self takePhoto];
+
+            }
+        
         });
         
     } else {
@@ -218,12 +225,8 @@
         
         NSData *jpegData = [AVCaptureStillImageOutput jpegStillImageNSDataRepresentation:imageDataSampleBuffer];
         
-        
-//        CFDictionaryRef attachments = CMCopyDictionaryOfAttachments(kCFAllocatorDefault,
-//                                                                    imageDataSampleBuffer,
-//                                                                    kCMAttachmentMode_ShouldPropagate);
-        
-        
+    
+    
         MBProgressHUD *hud = [MBProgressHUD showHUDAddedTo:self.view animated:YES];
       
         hud.labelText =  NSLocalizedString(@"加载中...", @"HUD loading title");
